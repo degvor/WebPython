@@ -1,0 +1,17 @@
+.admin-panel {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+}
+
+.admin-panel h1 {
+  margin-bottom: 20px;
+}
+
+.admin-panel button {
+  margin: 10px;
+  padding: 10px 20px;
+  cursor: pointer;
+}

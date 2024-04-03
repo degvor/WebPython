@@ -1,0 +1,159 @@
+/*.booking-table {*/
+/*  width: 100%;*/
+/*  border-collapse: collapse;*/
+/*}*/
+
+/*.booking-table th, .booking-table td {*/
+/*  border: 1px solid #ddd;*/
+/*  text-align: center;*/
+/*  padding: 8px;*/
+/*}*/
+/* BookingProperty.css */
+/*.estate-info {*/
+/*  text-align: center;*/
+/*  margin-bottom: 20px;*/
+/*}*/
+
+/*.estate-info img {*/
+/*  max-width: 100%;*/
+/*  height: auto;*/
+/*  border-radius: 8px;*/
+/*}*/
+
+/*.estate-info h2 {*/
+/*  color: #333;*/
+/*  font-size: 24px;*/
+/*  margin-top: 10px;*/
+/*}*/
+
+/*.estate-info p {*/
+/*  color: #666;*/
+/*  font-size: 18px;*/
+/*}*/
+
+.booking-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.booking-table th,
+.booking-table td {
+  border: 1px solid #ddd;
+  padding: 8px;
+  text-align: center;
+}
+
+.deal-done{
+  padding: 5px 10px;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 2px;
+}
+
+.booking-table th {
+  background-color: #f4f4f4;
+  color: #333;
+}
+
+.booking-table td button {
+  padding: 5px 10px;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 5px;
+}
+
+.booking-table td button:hover {
+  background-color: #45a049;
+}
+
+.booking-table td span {
+  color: #FF5722;
+  font-weight: bold;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  background-color: #f8f8f8;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.header .logo {
+  font-size: 24px;
+  color: #333;
+}
+
+.header .profile-button img {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+}
+
+.header .profile-button {
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+.booking-table td button.cancel-button {
+  background-color: #FF3D00; /* Червоний колір фону */
+  color: white; /* Білий колір тексту */
+  border: none; /* Видалення рамки */
+  padding: 5px 10px; /* Внутрішні відступи */
+  margin-top: 5px; /* Відступ зверху */
+  cursor: pointer; /* Вказівник курсора */
+  border-radius: 4px; /* Закруглені кути */
+}
+
+.booking-table td button.cancel-button:hover {
+  background-color: #D32F2F; /* Темніший відтінок червоного при наведенні */
+}
+
+.booking-table td span {
+  display: block; /* Зробити надпис блочним елементом */
+  color: #FF5722;
+  font-weight: bold;
+  margin-bottom: 10px; /* Додати відступ знизу до кнопки */
+}
+
+.estate-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 20px;
+}
+
+.estate-image img {
+   /* Задаємо ширину картинки */
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+.estate-details {
+  width: 45%; /* Ширина блоку з інформацією про нерухомість */
+  margin-left: 5%; /* Відступ між картинкою та інформацією */
+}
+
+.deal-done-button {
+  background-color: #4CAF50; /* Зелений колір фону */
+  color: white; /* Білий колір тексту */
+  padding: 10px 20px; /* Внутрішні відступи */
+  font-size: 16px; /* Розмір шрифту */
+  border: none; /* Видалення рамки */
+  cursor: pointer; /* Вказівник курсора */
+  border-radius: 5px; /* Закруглені кути */
+  margin-top: 10px; /* Відступ зверху */
+}
+
+.deal-done-button:hover {
+  background-color: #388E3C; /* Темніший відтінок зеленого при наведенні */
+}

@@ -1,0 +1,73 @@
+/*.my-estates-page {*/
+/*  padding: 20px;*/
+/*}*/
+
+/*.my-estates-header {*/
+/*  display: flex;*/
+/*  justify-content: space-between;*/
+/*  align-items: center;*/
+/*}*/
+
+/*.profile-button img {*/
+/*  width: 50px; !* Размер в зависимости от вашего дизайна *!*/
+/*  height: 50px;*/
+/*  border-radius: 50%; !* Делаем изображение круглым *!*/
+/*}*/
+
+/*.estates-list {*/
+/*  display: flex;*/
+/*  flex-wrap: wrap;*/
+/*  gap: 20px;*/
+/*}*/
+
+/*.estate-item button {*/
+/*  display: flex;*/
+/*  flex-direction: column;*/
+/*  align-items: center;*/
+/*  border: 1px solid #ccc; !* Граница в зависимости от вашего дизайна *!*/
+/*  padding: 10px;*/
+/*}*/
+
+/*.estate-item img {*/
+/*  max-width: 100%; !* Адаптивный размер изображения *!*/
+/*  height: auto;*/
+/*}*/
+
+/*.estate-info {*/
+/*  text-align: center;*/
+/*}*/
+.my-estates-page .estates-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  padding: 20px;
+}
+
+.my-estates-page .estate-item {
+  width: calc(33.333% - 20px); /* Для 3 елементів в ряд */
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  overflow: hidden;
+  cursor: pointer;
+  background-color: #f9f9f9;
+}
+
+.my-estates-page .estate-item img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.my-estates-page .estate-info {
+  padding: 10px;
+}
+
+.my-estates-page .estate-info h2 {
+  margin-top: 0;
+  font-size: 18px;
+}
+
+.my-estates-page .estate-info p {
+  margin: 5px 0;
+  font-size: 14px;
+}
