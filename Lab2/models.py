@@ -22,30 +22,13 @@ def get_db_connection():
             time.sleep(2)
 
 
-def create_user(conn, cursor, username, email, password, role):
-    cursor.execute("INSERT INTO users (username, email, password, role) VALUES (%s, %s, %s, %s) RETURNING id", (username, email, password, role))
-    user_id = cursor.fetchone()['id']
-    conn.commit()
-    cursor.close()
-    conn.close()
-    return user_id
-
-
-
-def update_user(id, name, email, password, role):
+def update_user(id, username, email, password, role):
     conn, cursor = get_db_connection()
-    cursor.execute("UPDATE users SET name = %s, email = %s, password = %s, role = %s WHERE id = %s", (name, email, password, role, id))
+    cursor.execute("UPDATE users SET username = %s, email = %s, password = %s, role = %s WHERE id = %s", (username, email, password, role, id))
     conn.commit()
     cursor.close()
     conn.close()
 
-
-def delete_user(id):
-    conn, cursor = get_db_connection()
-    cursor.execute("DELETE FROM users WHERE id = %s", (id,))
-    conn.commit()
-    cursor.close()
-    conn.close()
 
 
 def create_job(conn, cursor, title, description, requirements, salary, employer_id):
